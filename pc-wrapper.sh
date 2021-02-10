@@ -8,7 +8,7 @@ do
     package_cloud push --verbose --yes ${1}/${v} ${2}/*.rpm
 done | tee rpmout
 
-for v in ubuntu/xenial ubuntu/bionic debian/jessie debian/stretch debian/buster 
+for v in ubuntu/xenial ubuntu/bionic ubuntu/focal debian/jessie debian/stretch debian/buster 
 do
     echo Pushing to $1/$v
     package_cloud push --yes ${1}/${v} ${2}/*.deb
