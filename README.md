@@ -12,6 +12,18 @@ This action will push packages to PackageCloud using the package_cloud gem.
 
 **Required** Directory where the packages are. All rpms and debs found here will be pushed.
 
+### `rpmvers`
+
+**Required** Space separated list of RPM based distro versions to push to. The distro version strings are as per [packagecloud](https://packagecloud.io/docs/api#resource_packages_method_versions)
+
+A default value is supplied if no argument is provided.
+
+### `debvers`
+
+**Required** Space separated list of Debian based distro versions to push to. The distro version strings are as per [packagecloud](https://packagecloud.io/docs/api#resource_packages_method_versions)
+
+A default value is supplied if no argument is provided.
+
 ## Outputs
 
 ### `rpmout`

@@ -8,6 +8,14 @@ inputs:
   dir:
     description: 'base directory where packages are'
     required: true
+  rpmvers:
+    description: 'RPM based distros to push packages for (space-separated)'
+    required: true
+    default: 'el/7 el/8 ol/7 ol/8'
+  debvers:
+    description: 'Debian based distros to push packages for (space-separated)'
+    required: true
+    default: 'ubuntu/xenial ubuntu/bionic ubuntu/focal debian/jessie'
 outputs:
   rpmout:
     description: 'Output from rpm uploads'
