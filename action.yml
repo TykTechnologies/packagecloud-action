@@ -27,3 +27,5 @@ runs:
   args:
     - ${{ inputs.repo }}
     - ${{ inputs.dir }}
+    - ${{ inputs.debvers }}
+    - ${{ inputs.rpmvers }}
