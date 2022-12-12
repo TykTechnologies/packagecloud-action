@@ -4,8 +4,8 @@ set -eo pipefail
 
 repo=$1
 dir=${2:-.}
-rpmvers=$3
-debvers=$4
+debvers=$3
+rpmvers=$4
 
 for v in $rpmvers
 do
